@@ -1,0 +1,17 @@
+{
+  "name": "knowitallbot",
+  "version": "1.0.0",
+  "description": "KnowItAllBot is a chat bot that answers (most) of your questions.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon"
+  },
+  "private": true,
+  "repository": "github:dstotijn/knowitallbot",
+  "author": "David Stotijn <david@messagebird.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  }
+}
