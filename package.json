@@ -13,5 +13,10 @@
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^1.9.1"
+  },
+  "dependencies": {
+    "hapi": "^13.2.2",
+    "request": "^2.69.0",
+    "wolfram-alpha": "^0.3.0"
   }
 }
