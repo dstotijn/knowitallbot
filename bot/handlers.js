@@ -7,16 +7,19 @@ exports.answer = function answer(request, reply) {
 
   // We don't want to handle anything other than `received` messages.
   if (request.payload.status !== 'received') {
+    reply('OK');
     return;
   }
 
   if (request.payload.payload === '/start') {
     require('./chat-api').createMessage(request.payload.contactId, 'Hi! Ask me anything...');
+    reply('OK');
     return;
   }
 
   if (request.payload.type !== 'text') {
     require('./chat-api').createMessage(request.payload.contactId, 'Sorry, I only understand text messages...');
+    reply('OK');
     return;
   }
 

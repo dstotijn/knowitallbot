@@ -11,6 +11,7 @@ server.route({
   method: 'POST',
   path: '/webhook',
   handler: require('./bot/handlers').answer
+  // handler: function (request, reply) { reply('foo')}
 });
 
 server.start((err) => {
