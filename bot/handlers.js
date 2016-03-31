@@ -49,9 +49,8 @@ exports.answer = function answer(request, reply) {
       answer = "Sorry, I don't have an answer for that! 😳"
     }
 
-    if (answer) {
-      chatApi.createMessage(request.payload.contactId, answer);
-    }
+    // Send answer to Chat API.
+    chatApi.createMessage(request.payload.contactId, answer);
   });
 
   reply('OK');
