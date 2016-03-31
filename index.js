@@ -10,7 +10,12 @@ server.connection({
 server.route({
   method: 'POST',
   path: '/webhook',
-  handler: require('./bot/handlers').answer
+  handler: require('./bot/handlers').answer,
+  config: {
+    validate: {
+      payload: require('./bot/validation').webhookValidationSchema()
+    }
+  }
 });
 
 server.start((err) => {

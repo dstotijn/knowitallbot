@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "hapi": "^13.2.2",
+    "joi": "^8.0.5",
     "request": "^2.69.0",
     "wolfram-alpha": "^0.3.0"
   }

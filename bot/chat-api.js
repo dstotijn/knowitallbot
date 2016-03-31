@@ -14,7 +14,7 @@ exports.createMessage = function createMessage(contactId, payload) {
       payload: payload,
       type: 'text',
     }
-  }, function (error, response, body) {
+  }, (error, response, body) => {
     if (error) throw error;
 
     if (body.errors) {
