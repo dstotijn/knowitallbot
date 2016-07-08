@@ -1,11 +1,11 @@
 # KnowItAllBot
 
 KnowItAllBot is a chat bot that answers (most) of your questions, through the magic of the Wolfram Alpha REST API.
-Integration with the [MessageBird Chat API](https://www.messagebird.com/en/chat-api) makes it possible to ask the bot questions via WeChat, SMS, Telegram and WhatsApp.
+Integration with the [MessageBird Chat API](https://www.messagebird.com/en/chat-api) makes it possible to ask the bot questions via Facebook Messenger, WeChat, Telegram LINE and SMS.
 
 ## Demo
 
-[Add the KnowItAllBot on Telegram](https://telegram.me/KnowItAllBot) or sms your question to +31612345678.
+[Add the KnowItAllBot on Telegram](https://telegram.me/KnowItAllBot) and ask it anything.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ Integration with the [MessageBird Chat API](https://www.messagebird.com/en/chat-
 
 Clone the repository:
 ```
-$ git clone git@github.com:dstotijn/knowitallbot.git
+$ git clone git@bitbucket.org:messagebird/knowitallbot.git
 ```
 
 Change the working directory and install project dependencies:
