@@ -4,7 +4,7 @@ const request = require('request');
 
 exports.createMessage = function createMessage(contactId, payload) {
   request.post({
-    url: (process.env.CHAT_API_BASE_URI || 'https://chat.messagebird.com/') + 'messages',
+    url: (process.env.CHAT_API_BASE_URI || 'https://chat.messagebird.com/1/') + 'messages',
     auth: {
       user: process.env.CHAT_API_ACCESS_TOKEN || null,
       pass: ''
