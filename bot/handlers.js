@@ -45,6 +45,9 @@ exports.answer = function answer(request, reply) {
       answer = `${result[1].title}: ${result[1].subpods[0].text}`;
     }
 
+    // Strip "Result:" from the answer.
+    answer = answer.replace(/^Result:\s/i, '');
+
     if (!answer) {
       answer = "Sorry, I don't have an answer for that! 😳"
     }
