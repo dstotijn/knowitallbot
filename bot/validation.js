@@ -12,6 +12,7 @@ exports.webhookValidationSchema = function webhookValidationSchema() {
     'mediaPath': Joi.string().allow(null),
     'status': Joi.string(),
     'direction': Joi.string(),
+    'reference': Joi.string().allow(null),
     'scheduledAt': Joi.string().allow(null),
     'createdAt': Joi.string(),
     'updatedAt': Joi.string().allow(null),
